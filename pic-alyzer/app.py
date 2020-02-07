@@ -24,7 +24,7 @@ def create_app():
         image_batch_list = request.get_json(force=True)['images']
 
 
-        return request.get.json()
+        return request.get.json(force=True)['images'])
         # image_batch_dict="foo"
 
         # image_path = "foo"  # dummy function doesn't even use value.
