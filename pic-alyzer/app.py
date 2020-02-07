@@ -22,6 +22,9 @@ def create_app():
     def summary():
         """Receive and process a request for classification of one image."""
         image_batch_list = request.get_json(force=True)['images']
+
+
+        return request.get.json()
         # image_batch_dict="foo"
 
         # image_path = "foo"  # dummy function doesn't even use value.
@@ -38,7 +41,7 @@ def create_app():
         # @image_batch_dict = request['images']
         #image_batch_dict = test_single_image_msg
 
-        return batch_to_response_set(image_batch_list)
+        # return batch_to_response_set(image_batch_list)
 
     @app.route('/batch_img_summary', methods=['GET', 'POST'])
     def batch_img_summary():
